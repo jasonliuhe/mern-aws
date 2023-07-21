@@ -19,7 +19,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.listen(3030, () => console.log(`Server started on port 3030`))
+app.listen(80, () => console.log(`Server started on port 80`))
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
